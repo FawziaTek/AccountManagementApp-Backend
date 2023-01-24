@@ -2,10 +2,10 @@
 
 This project provides to create account for existing customers in java Spring boot.
 
-Summary
+##Summary
 The assessment consists of an API to be used for opening a new “current account” of already existing customers.
 
-Requirements
+##Requirements
 • The API will expose an endpoint which accepts the user information (customerID, initialCredit).
 
 • Once the endpoint is called, a new account will be opened connected to the user whose ID is customerID.
@@ -24,27 +24,23 @@ CustomerAPI
 * GET /v1/account - retrieves all accounts
 * GET /v1/customer - retrieves all customers
 
-Tech Stack
+##Tech Stack
 Java 8
 Spring Boot
 Spring Data JPA
-Angular 8
 Restful API
 Swagger UI
 H2 In memory database
 JUnit 5
 Angular for frontend
-Prerequisites
+
+##Prerequisites
 Maven
-Run & Build
+##Run & Build
 
 AccountManagementApp-Backend
-$ mvn clean install
-$ mvn spring-boot:run
-
-AccountManagement-Frontend
-$ npm install
-$ ng serve
+* $ mvn clean install
+* $ mvn spring-boot:run
 
 Swagger UI will be run on this url($PORT: 8382)
-http://localhost:${PORT}/swagger-ui.html
+* http://localhost:${PORT}/swagger-ui.html

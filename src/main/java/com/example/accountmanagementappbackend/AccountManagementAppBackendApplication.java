@@ -23,14 +23,17 @@ public class AccountManagementAppBackendApplication implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception {
         customerRepository.deleteAll();
-        customerRepository.save(new Customer("John","White"));
-        customerRepository.save(new Customer("Alex","Renard"));
-        customerRepository.save(new Customer("Maria","Bono"));
-        customerRepository.save(new Customer("Louna","Massy"));
+        customerRepository.save(new Customer("John", "White"));
+        customerRepository.save(new Customer("Alex", "Renard"));
+        customerRepository.save(new Customer("Maria", "Bono"));
+        customerRepository.save(new Customer("Louna", "Massy"));
+        customerRepository.save(new Customer("Lila", "Mouma"));
+
+
         // fetch all customers
         logger.info("Show All Customers :");
         customerRepository.findAll().forEach((customer ->
-                logger.info("{}",customer)));
+                logger.info("{}", customer)));
 
 
     }}

@@ -1,9 +1,9 @@
 package com.example.accountmanagementappbackend.services;
 
-import com.example.accountmanagementbackend.dtos.CustomerDTO;
-import com.example.accountmanagementbackend.entites.Customer;
-import com.example.accountmanagementbackend.mapper.ICustomerMapper;
-import com.example.accountmanagementbackend.repositories.CustomerRepository;
+import com.example.accountmanagementappbackend.dtos.CustomerDTO;
+import com.example.accountmanagementappbackend.entites.Customer;
+import com.example.accountmanagementappbackend.mapper.ICustomerMapper;
+import com.example.accountmanagementappbackend.repositories.CustomerRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

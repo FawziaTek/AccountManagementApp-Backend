@@ -1,6 +1,6 @@
 package com.example.accountmanagementappbackend.exceptions;
 
-import com.example.accountmanagementbackend.configuration.GetExceptionPropertiesValue;
+import com.example.accountmanagementappbackend.configuration.GetExceptionPropertiesValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

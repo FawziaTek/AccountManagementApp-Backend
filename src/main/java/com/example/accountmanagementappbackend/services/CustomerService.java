@@ -1,6 +1,6 @@
 package com.example.accountmanagementappbackend.services;
 
-import com.example.accountmanagementbackend.dtos.CustomerDTO;
+import com.example.accountmanagementappbackend.dtos.CustomerDTO;
 
 import java.util.List;
 

@@ -8,11 +8,15 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * AccountDTO class
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-
 public class AccountDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 

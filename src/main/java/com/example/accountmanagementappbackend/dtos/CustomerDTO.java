@@ -6,7 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * CustomerDTO class
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

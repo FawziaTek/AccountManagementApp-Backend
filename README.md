@@ -1,8 +1,6 @@
 # AccountManagementApp-Backend
+
 AccountManagement Application Backend
-
-
-Account API For Existing Customer
 Spring Boot and Angular Application
 This project provides to create account for existing customers.
 
@@ -23,6 +21,19 @@ The application has 2 apis
 AccountAPI
 CustomerAPI
 POST /v1/account - creates a new account for existing customer
+GET /v1/account/{accountId} - retrieves an account
+GET /v1/account - retrieves all accounts
+GET /v1/customer - retrieves all customers
+
+Tech Stack
+Java 8
+Spring Boot
+Spring Data JPA
+Angular 8
+Restful API
+Swagger UI
+H2 In memory database
+=======
 GET /v1/account/{accountId} - retrieves a account
 GET /v1/account - retrieves all accounts
 GET /v1/customer - retrieves all customers
@@ -34,21 +45,22 @@ Spring Data JPA
 Restful API
 Swagger UI
 H2 In memory database
-
 JUnit 5
 Angular for frontend
 Prerequisites
 Maven
 Run & Build
 
-AccountManagementApp-Backend 
+
+AccountManagementApp-Backend
 $ mvn clean install
 $ mvn spring-boot:run
 
-AccountManagement-Frontend 
-$ npm install
-$ npm start
-$ ng serve
+AccountManagement-Frontend
+=======
+AccountManagementApp-Backend 
+$ mvn clean install
+$ mvn spring-boot:run
 
 Swagger UI will be run on this url($PORT: 8382)
 http://localhost:${PORT}/swagger-ui.html

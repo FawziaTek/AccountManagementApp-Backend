@@ -1,6 +1,8 @@
 package com.example.accountmanagementappbackend.entites;
 /**
- * @author Fawzia Tekaya in 18/01/23
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * Account class
  */
 
 import lombok.*;

@@ -1,5 +1,9 @@
 package com.example.accountmanagementappbackend.exceptions;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * ExceptionHandler class
+ ***/
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

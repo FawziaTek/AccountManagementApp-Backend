@@ -1,4 +1,9 @@
 package com.example.accountmanagementappbackend.services;
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * AccountService interface
+ **/
 
 import com.example.accountmanagementappbackend.dtos.AccountDTO;
 import com.example.accountmanagementappbackend.dtos.AccountRequestDTO;

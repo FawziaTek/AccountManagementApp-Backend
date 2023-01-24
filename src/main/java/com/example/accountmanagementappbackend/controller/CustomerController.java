@@ -2,7 +2,6 @@ package com.example.accountmanagementappbackend.controller;
 
 import com.example.accountmanagementappbackend.dtos.CustomerDTO;
 import com.example.accountmanagementappbackend.services.CustomerService;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -15,7 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * CustomerController class : in this class there is a Customer Api wich will return a list of customers
+ */
 @CrossOrigin(origins = "*")
 @Api(description = "Consume the Account Management web service Customer API")
 @RestController

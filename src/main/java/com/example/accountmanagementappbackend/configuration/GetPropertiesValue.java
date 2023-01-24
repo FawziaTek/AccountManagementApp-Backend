@@ -3,7 +3,11 @@ package com.example.accountmanagementappbackend.configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * GetPropertiesValue class : in this class we will read all values that been defined in application.properties file
+ */
 @Configuration
 public class GetPropertiesValue {
 

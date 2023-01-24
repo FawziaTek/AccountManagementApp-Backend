@@ -18,7 +18,11 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * AccountController class : in this class there is 3 Account Api
+ */
 @CrossOrigin(origins = "*")
 
 @Api(description = "Consume the Account Management web service Account API ")
@@ -46,7 +50,6 @@ public class AccountController {
         if((accountRequestDTO.getInitialCredit() == 0 )){
             throw new InvalidInput("Initial Credit");
         }
-        //return accountService.createAccount(customerID, initialCredit);
        return accountService.createAccount(accountRequestDTO);
     }
 
@@ -55,13 +58,12 @@ public class AccountController {
     @GetMapping("/{accountId}")
     public AccountResponseDTO getAccountById(@Valid @PathVariable Long accountId) throws AccountNotFoundException,InvalidInput{
         logger.info("==> getAccountById  In");
-
         if((accountId == null ) || (accountId.toString().isEmpty())  ){
             throw new InvalidInput("AccountId");
         }
-
         return accountService.getAccountById(accountId);
     }
+
 
     @ApiOperation(value = "This method allows to show all accounts", response = AccountDTO.class)
     @GetMapping

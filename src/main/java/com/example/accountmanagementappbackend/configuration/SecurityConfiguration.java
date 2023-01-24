@@ -12,7 +12,11 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * SecurityConfiguration class : in this class we will define our security configuration
+ */
 @Configuration
 @EnableWebSecurity
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})

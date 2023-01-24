@@ -1,7 +1,6 @@
 # AccountManagementApp-Backend
 
 AccountManagement Application Backend
-
 Spring Boot and Angular Application
 This project provides to create account for existing customers.
 
@@ -34,26 +33,34 @@ Angular 8
 Restful API
 Swagger UI
 H2 In memory database
+=======
+GET /v1/account/{accountId} - retrieves a account
+GET /v1/account - retrieves all accounts
+GET /v1/customer - retrieves all customers
+
+
+Java 8
+Spring Boot
+Spring Data JPA
+Restful API
+Swagger UI
+H2 In memory database
 JUnit 5
 Angular for frontend
 Prerequisites
 Maven
 Run & Build
 
-Maven
-For maven usage, you need to change proxy value in the account-fe/package.json file by "http://localhost:8382" due to
-the default value has been settled for docker image network proxy.
-
-$PORT: 8382
 
 AccountManagementApp-Backend
 $ mvn clean install
 $ mvn spring-boot:run
 
 AccountManagement-Frontend
-$ npm install
-$ npm start
-$ ng serve
+=======
+AccountManagementApp-Backend 
+$ mvn clean install
+$ mvn spring-boot:run
 
-Swagger UI will be run on this url  ($PORT: 8382)
+Swagger UI will be run on this url($PORT: 8382)
 http://localhost:${PORT}/swagger-ui.html

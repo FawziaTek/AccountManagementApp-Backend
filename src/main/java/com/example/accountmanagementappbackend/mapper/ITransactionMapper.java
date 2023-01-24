@@ -1,5 +1,9 @@
 package com.example.accountmanagementappbackend.mapper;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * ITransactionMapper class : in this class we will convert Object Transaction to TransactionDTO
+ **/
 
 import com.example.accountmanagementappbackend.dtos.TransactionDTO;
 import com.example.accountmanagementappbackend.entites.Transaction;

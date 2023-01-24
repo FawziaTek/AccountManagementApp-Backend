@@ -1,5 +1,9 @@
 package com.example.accountmanagementappbackend.entites;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * Customer class
+ */
 import lombok.*;
 
 import javax.persistence.*;

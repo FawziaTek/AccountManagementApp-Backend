@@ -15,7 +15,11 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * ControllerExceptionAdvice class
+ ***/
 
 @ControllerAdvice
 public class ControllerExceptionAdvice extends ResponseEntityExceptionHandler {

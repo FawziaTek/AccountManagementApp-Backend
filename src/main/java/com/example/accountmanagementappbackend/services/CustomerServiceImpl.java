@@ -1,4 +1,11 @@
 package com.example.accountmanagementappbackend.services;
+/**
+ * @author Fawzia Tekaya in 24/01/2023
+ * <p>
+ * CustomerServiceImpl class : we will implement the CustomerService interface
+ * <p>
+ * in this class we created 1 service
+ **/
 
 import com.example.accountmanagementappbackend.dtos.CustomerDTO;
 import com.example.accountmanagementappbackend.entites.Customer;
@@ -12,6 +19,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 @Service
 @Slf4j
 public class CustomerServiceImpl implements CustomerService {
@@ -22,10 +30,17 @@ public class CustomerServiceImpl implements CustomerService {
 
     private static final Logger logger = LoggerFactory.getLogger(CustomerServiceImpl.class);
 
-    public List<CustomerDTO> listOfCustomers()
-    {
+    /***
+     * listOfCustomers Service : in this service we will return all customers
+     *
+     * Inpout:
+     * Output:List<CustomerDTO>
+     *
+     *
+     * **/
+    public List<CustomerDTO> listOfCustomers() {
         List<Customer> customers = customerRepository.findAll();
-        List<CustomerDTO> customerDTOS=customers.stream()
+        List<CustomerDTO> customerDTOS = customers.stream()
                 .map(customer -> iCustomerMapper.fromCustomerToCustomerDTO(customer))
                 .collect(Collectors.toList());
         return customerDTOS;

@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class CustomerDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long customer_id;
+    private Long customerId;
     private String name;
     private String surname;
 }

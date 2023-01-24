@@ -15,7 +15,7 @@ import java.util.Date;
 public class TransactionDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long transaction_id;
+    private Long transactionId;
     private double amount;
     private Date transactionDate;
 }

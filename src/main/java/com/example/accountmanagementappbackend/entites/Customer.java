@@ -13,7 +13,7 @@ import java.util.List;
 public class Customer {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long customer_id;
+    private Long customerId;
     @NonNull
     private String name;
     @NonNull

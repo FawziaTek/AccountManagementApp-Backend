@@ -58,7 +58,7 @@ public class AccountServiceImpl implements AccountService {
         Transaction transaction = new Transaction();
         Date currentDate = Date.valueOf(LocalDate.now());
 
-        Customer customer = customerRepository.findById(accountRequestDTO.getCustomer_Id()).orElseThrow(()->  new NoSuchElementException("Customer"));
+        Customer customer = customerRepository.findById(accountRequestDTO.getCustomerId()).orElseThrow(()->  new NoSuchElementException("Customer"));
         if(customer == null )
             throw  new CustomerNotFoundException("Customer not found ") ;
 

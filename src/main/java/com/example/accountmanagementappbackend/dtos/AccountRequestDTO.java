@@ -12,7 +12,7 @@ import lombok.ToString;
 
 public class AccountRequestDTO {
 
-    private Long customer_Id;
+    private Long customerId;
    // @NonNull
     private double initialCredit;
 }

@@ -14,15 +14,15 @@ import java.sql.Date;
 public class Transaction {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name = "transaction_id",updatable = false,nullable = false)
-    private Long transaction_id;
+    //@Column(name = "transactionId",updatable = false,nullable = false)
+    private Long transactionId;
     @NonNull
     private double amount;
     @NonNull
     private Date transactionDate;
    // @NonNull
     @ManyToOne(fetch = FetchType.LAZY , cascade = CascadeType.ALL) // Many transactions for One account
-    @JoinColumn(name="account_id",nullable = false)
+    @JoinColumn(name="accountId",nullable = false)
     private Account account;
 
 }

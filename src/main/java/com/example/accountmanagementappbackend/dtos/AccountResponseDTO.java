@@ -14,7 +14,7 @@ import java.util.List;
 @ToString
 public class AccountResponseDTO implements Serializable {
     private static final long serialVersionUID = 1L;
-    //private Long account_id;
+    //private Long accountId;
     private String name;
     private String surname;
     private double balance;

@@ -40,7 +40,7 @@ public class AccountController {
     //public AccountResponseDTO createAccount(@Valid @RequestBody AccountRequestDTO accountRequestDTO) throws CustomerNotFoundException {
     public AccountDTO createAccount(@Valid @RequestBody AccountRequestDTO accountRequestDTO) throws CustomerNotFoundException, InvalidInput {
         logger.info("==> createAccount  In");
-        if((accountRequestDTO.getCustomer_Id() == null ) || (accountRequestDTO.getCustomer_Id().toString().isEmpty()) ){
+        if((accountRequestDTO.getCustomerId() == null ) || (accountRequestDTO.getCustomerId().toString().isEmpty()) ){
             throw new InvalidInput("CustomerId");
         }
         if((accountRequestDTO.getInitialCredit() == 0 )){

@@ -16,7 +16,7 @@ import java.util.List;
 public class AccountDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long account_id;
+    private Long accountId;
     private double balance;
     private Date creationDate;
     private CustomerDTO customerDTO;

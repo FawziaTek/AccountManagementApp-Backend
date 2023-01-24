@@ -19,12 +19,12 @@ class ICustomerMapperTest {
 
     @Test
     void fromCustomerToCustomerDTO() {
-        Customer customerBE = new Customer(1L, "ahmed", "louna", new ArrayList<>());
+        Customer customer = new Customer(1L, "ahmed", "louna", new ArrayList<>());
 
-        CustomerDTO result = testee.fromCustomerToCustomerDTO(customerBE);
+        CustomerDTO result = testee.fromCustomerToCustomerDTO(customer);
 
-        assertEquals(customerBE.getCustomerId(), result.getCustomerId());
-        assertEquals(customerBE.getName(), result.getName());
-        assertEquals(customerBE.getSurname(), result.getSurname());
+        assertEquals(customer.getCustomerId(), result.getCustomerId());
+        assertEquals(customer.getName(), result.getName());
+        assertEquals(customer.getSurname(), result.getSurname());
     }
 }

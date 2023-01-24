@@ -10,6 +10,8 @@ import com.example.accountmanagementappbackend.exceptions.NoSuchElementException
 import java.util.List;
 
 public interface AccountService {
+
+
     AccountDTO createAccount(AccountRequestDTO accountRequestDTO) throws CustomerNotFoundException, NoSuchElementException;
 
     AccountResponseDTO getAccountById(Long accountId) throws AccountNotFoundException;

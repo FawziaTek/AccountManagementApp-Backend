@@ -33,15 +33,15 @@ class CustomerServiceImplTest {
     @Test
     void listOfCustomers() {
         //Give
-        List<Customer> customerBEs = new ArrayList<>();
-        customerBEs.add(new Customer());
-        customerBEs.add(new Customer());
-        when(customerRepository.findAll()).thenReturn(customerBEs);
+        List<Customer> customer = new ArrayList<>();
+        customer.add(new Customer());
+        customer.add(new Customer());
+        when(customerRepository.findAll()).thenReturn(customer);
         when(iCustomerMapper.fromCustomerToCustomerDTO(any())).thenReturn(new CustomerDTO());
         //when
         List<CustomerDTO> result = testee.listOfCustomers();
         //then
         assertNotNull(result);
-        assertEquals(customerBEs.size(), result.size());
+        assertEquals(customer.size(), result.size());
     }
 }

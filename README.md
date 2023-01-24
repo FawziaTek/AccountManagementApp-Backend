@@ -20,6 +20,7 @@ The application has 2 apis
 
 AccountAPI
 CustomerAPI
+
 POST /v1/account - creates a new account for existing customer
 GET /v1/account/{accountId} - retrieves an account
 GET /v1/account - retrieves all accounts
@@ -33,34 +34,19 @@ Angular 8
 Restful API
 Swagger UI
 H2 In memory database
-=======
-GET /v1/account/{accountId} - retrieves a account
-GET /v1/account - retrieves all accounts
-GET /v1/customer - retrieves all customers
-
-
-Java 8
-Spring Boot
-Spring Data JPA
-Restful API
-Swagger UI
-H2 In memory database
 JUnit 5
 Angular for frontend
 Prerequisites
 Maven
 Run & Build
 
-
 AccountManagementApp-Backend
 $ mvn clean install
 $ mvn spring-boot:run
 
 AccountManagement-Frontend
-=======
-AccountManagementApp-Backend 
-$ mvn clean install
-$ mvn spring-boot:run
+$ npm install
+$ ng serve
 
 Swagger UI will be run on this url($PORT: 8382)
 http://localhost:${PORT}/swagger-ui.html

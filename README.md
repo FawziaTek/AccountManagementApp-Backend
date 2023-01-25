@@ -44,10 +44,11 @@ AccountManagementApp-Backend
 * $ mvn clean install
 * $ mvn spring-boot:run
 
-Swagger UI will be run on this url($PORT: 8382)
+Swagger UI:
+will be run on this url($PORT: 8382)
 * http://localhost:${PORT}/swagger-ui.html
 
-**Spring Security
+*Spring Security
 
-username:admin
-password: admin
+- username:admin
+- password:admin

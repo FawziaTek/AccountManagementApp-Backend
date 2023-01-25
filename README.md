@@ -46,3 +46,8 @@ AccountManagementApp-Backend
 
 Swagger UI will be run on this url($PORT: 8382)
 * http://localhost:${PORT}/swagger-ui.html
+
+**Spring Security
+
+username:admin
+password: admin
